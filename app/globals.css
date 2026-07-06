@@ -1,0 +1,163 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Barlow:wght@200;300;400;500;600&family=Barlow+Condensed:wght@200;300;400;500;600;700&display=swap'); */
+
+/* @theme {
+  --color-gold: #c9a84c;
+  --color-gold-light: #e4c97e;
+  --color-gold-dark: #a07830;
+  --color-charcoal: #1a1a1a;
+  --color-charcoal-light: #242424;
+  --color-charcoal-dark: #141414;
+  --color-apex-bg: #0d0d0d;
+  --color-apex-surface: #161616;
+  --color-apex-muted: #8a8580;
+  --color-apex-off-white: #f0ede8;
+  --font-family-display: 'Playfair Display', serif;
+  --font-family-sans: 'Barlow', sans-serif;
+  --font-family-condensed: 'Barlow Condensed', sans-serif;
+} */
+
+:root {
+  --gold: #c9a84c;
+  --gold-light: #e4c97e;
+  --gold-dark: #a07830;
+  --off-white: #f0ede8;
+  --muted: #8a8580;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: #0d0d0d;
+  color: #f0ede8;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0d0d0d; }
+::-webkit-scrollbar-thumb { background: #a07830; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #c9a84c; }
+::selection { background: rgba(201,168,76,.25); color: #e4c97e; }
+
+/* Fonts */
+.font-display  { font-family: 'Playfair Display', serif; }
+.font-condensed{ font-family: 'Barlow Condensed', sans-serif; }
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg,#e4c97e 0%,#c9a84c 50%,#a07830 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.glass-gold {
+  background: rgba(201,168,76,.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(201,168,76,.15);
+}
+
+/* Buttons */
+.btn-gold {
+  background: linear-gradient(135deg,#c9a84c 0%,#a07830 100%);
+  color: #0d0d0d;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,#e4c97e 0%,#c9a84c 100%);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.btn-gold:hover::before { opacity: 1; }
+
+.btn-outline-gold {
+  border: 1px solid #c9a84c;
+  color: #c9a84c;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  background: transparent;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-outline-gold:hover {
+  background: rgba(201,168,76,.08);
+  box-shadow: 0 0 20px rgba(201,168,76,.15);
+}
+
+/* Divider */
+.divider-gold {
+  height: 1px;
+  background: linear-gradient(90deg,transparent,#c9a84c,transparent);
+}
+
+/* Hover underline */
+.hover-underline { position: relative; }
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1px;
+  background: #c9a84c;
+  transition: width .3s ease;
+}
+.hover-underline:hover::after { width: 100%; }
+
+/* Inputs */
+.input-luxury {
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.1);
+  color: #f0ede8;
+  transition: all .3s ease;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  width: 100%;
+}
+.input-luxury:focus {
+  border-color: #c9a84c;
+  background: rgba(201,168,76,.04);
+  box-shadow: 0 0 0 3px rgba(201,168,76,.08);
+  outline: none;
+}
+.input-luxury::placeholder { color: #8a8580; font-weight: 300; }
+
+/* Card hover lift */
+.card-luxury { transition: transform .4s cubic-bezier(.25,.46,.45,.94), box-shadow .4s ease; }
+.card-luxury:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 32px 64px rgba(0,0,0,.5), 0 0 0 1px rgba(201,168,76,.12);
+}
+
+/* Section label */
+.section-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: #c9a84c;
+}
