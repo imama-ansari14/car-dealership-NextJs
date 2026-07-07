@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const BRANDS = ["Ferrari","Lamborghini","Porsche","McLaren","Bugatti","Aston Martin","Pagani","Koenigsegg","Rimac","Zenvo"];
+const BRANDS = ["Ferrari", "Lamborghini", "Porsche", "McLaren", "Bugatti", "Aston Martin", "Pagani", "Koenigsegg", "Rimac", "Zenvo"];
 
 export default function BrandSection() {
   return (

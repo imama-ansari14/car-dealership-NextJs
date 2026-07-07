@@ -8,7 +8,7 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 
-import { FiPhone, FiMail, FiMapPin} from "react-icons/fi";
+import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 
 const VEHICLE_LINKS = [
   { label: "All Inventory", href: "/inventory" },

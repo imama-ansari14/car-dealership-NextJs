@@ -4,14 +4,17 @@ A premium, cinematic luxury sports car retailer website built with **Next.js 15*
 
 ---
 
-## 🚀 Getting Started
+## ✨ Features
 
-```bash
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
+| Page | Features |
+|------|----------|
+| **Home** | Parallax hero, featured cars, stats strip, brand ticker, testimonials, CTA banner |
+| **Inventory** | Category filter, live search, sort by price/HP, animated grid |
+| **Car Detail** | Image gallery with thumbnails, specs table, features, related vehicles |
+| **Gallery** | Masonry grid with hover zoom, lightbox viewer |
+| **About** | Team section, values, cinematic image layout |
+| **Contact** | Animated form with success state |
+| **Booking** | 4-step wizard with car selection, personal details, date/time picker |
 
 ---
 
@@ -53,20 +56,6 @@ apex-motors/
 └── public/
     └── assets/images/         # Local image assets
 ```
-
----
-
-## ✨ Features
-
-| Page | Features |
-|------|----------|
-| **Home** | Parallax hero, featured cars, stats strip, brand ticker, testimonials, CTA banner |
-| **Inventory** | Category filter, live search, sort by price/HP, animated grid |
-| **Car Detail** | Image gallery with thumbnails, specs table, features, related vehicles |
-| **Gallery** | Masonry grid with hover zoom, lightbox viewer |
-| **About** | Team section, values, cinematic image layout |
-| **Contact** | Animated form with success state |
-| **Booking** | 4-step wizard with car selection, personal details, date/time picker |
 
 ---
 
