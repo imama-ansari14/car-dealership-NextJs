@@ -235,19 +235,19 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { label: "Vehicles Sold",     value: "2,400+" },
-  { label: "Years of Excellence", value: "18+"  },
+  { label: "Vehicles Sold", value: "2,400+" },
+  { label: "Years of Excellence", value: "18+" },
   { label: "Satisfied Clients", value: "1,800+" },
-  { label: "Countries Served",  value: "34"     },
+  { label: "Countries Served", value: "34" },
 ];
 
 export const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=90", alt: "Luxury sports car rear view",  span: "col-span-2 row-span-2" },
-  { id: 2, src: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200&q=90", alt: "Ferrari front profile",         span: "col-span-1 row-span-1" },
-  { id: 3, src: "https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?w=1200&q=90", alt: "Supercar engine detail",        span: "col-span-1 row-span-1" },
-  { id: 4, src: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1200&q=90", alt: "Lamborghini on track",           span: "col-span-1 row-span-2" },
-  { id: 5, src: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=1200&q=90", alt: "Ferrari in motion",             span: "col-span-1 row-span-1" },
-  { id: 6, src: "https://images.unsplash.com/photo-1485463611174-f302f6a5c1c9?w=1200&q=90", alt: "Classic sports car",           span: "col-span-1 row-span-1" },
-  { id: 7, src: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1200&q=90", alt: "Luxury car showroom",           span: "col-span-2 row-span-1" },
-  { id: 8, src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=90", alt: "Porsche 911 profile",           span: "col-span-1 row-span-1" },
+  { id: 1, src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=90", alt: "Luxury sports car rear view", span: "col-span-2 row-span-2" },
+  { id: 2, src: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1200&q=90", alt: "Ferrari front profile", span: "col-span-1 row-span-1" },
+  { id: 3, src: "https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?w=1200&q=90", alt: "Supercar engine detail", span: "col-span-1 row-span-1" },
+  { id: 4, src: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1200&q=90", alt: "Lamborghini on track", span: "col-span-1 row-span-2" },
+  { id: 5, src: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=1200&q=90", alt: "Ferrari in motion", span: "col-span-1 row-span-1" },
+  { id: 6, src: "https://images.unsplash.com/photo-1485463611174-f302f6a5c1c9?w=1200&q=90", alt: "Classic sports car", span: "col-span-1 row-span-1" },
+  { id: 7, src: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=1200&q=90", alt: "Luxury car showroom", span: "col-span-2 row-span-1" },
+  { id: 8, src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=90", alt: "Porsche 911 profile", span: "col-span-1 row-span-1" },
 ];

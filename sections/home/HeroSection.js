@@ -8,14 +8,14 @@ import { FaArrowRight, FaChevronDown } from "react-icons/fa6";
 export default function HeroSection() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const imgY     = useTransform(scrollYProgress, [0, 1], ["0%",  "28%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%",  "45%"]);
-  const opacity  = useTransform(scrollYProgress, [0, .65], [1, 0]);
+  const imgY = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "45%"]);
+  const opacity = useTransform(scrollYProgress, [0, .65], [1, 0]);
 
   const STATS = [
     { value: "2,400+", label: "Vehicles Delivered" },
-    { value: "18 Yrs",  label: "Of Excellence"       },
-    { value: "34",       label: "Countries Served"    },
+    { value: "18 Yrs", label: "Of Excellence" },
+    { value: "34", label: "Countries Served" },
   ];
 
   return (
@@ -33,8 +33,8 @@ export default function HeroSection() {
 
       {/* Layered overlays */}
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, #050505 0%, rgba(5,5,5,.65) 55%, transparent 100%)", zIndex: 1 }} />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top,   #050505 0%, transparent 50%)",                             zIndex: 1 }} />
-      <div style={{ position: "absolute", inset: 0, background: "rgba(5,5,5,.18)",                                                                     zIndex: 1 }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top,   #050505 0%, transparent 50%)", zIndex: 1 }} />
+      <div style={{ position: "absolute", inset: 0, background: "rgba(5,5,5,.18)", zIndex: 1 }} />
 
       {/* Content */}
       <motion.div style={{ position: "absolute", inset: 0, zIndex: 2, display: "flex", alignItems: "center", y: contentY, opacity }}>
@@ -54,7 +54,7 @@ export default function HeroSection() {
                 <motion.h1
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
-                  transition={{ duration: 1, delay: .5 + i * .15, ease: [.25,.46,.45,.94] }}
+                  transition={{ duration: 1, delay: .5 + i * .15, ease: [.25, .46, .45, .94] }}
                   className={i === 1 ? "font-display text-gold-gradient" : "font-display"}
                   style={{ fontSize: "clamp(3.5rem, 10vw, 7rem)", lineHeight: 1, fontWeight: 600, margin: 0, color: i === 0 ? "#fff" : undefined }}
                 >
