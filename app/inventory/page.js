@@ -36,7 +36,7 @@ export default function InventoryPage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#0d0d0d" }}>
-      
+
       {/* HERO SECTION */}
       <div style={{ position: "relative", paddingTop: "10rem", paddingBottom: "4rem", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 30% 50%, rgba(201,168,76,.04) 0%, transparent 70%)" }} />

@@ -183,20 +183,19 @@ export default function BookingPage() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              border: `1px solid ${
-                i < step
-                  ? "#c9a84c"
-                  : i === step
+              border: `1px solid ${i < step
+                ? "#c9a84c"
+                : i === step
                   ? "#c9a84c"
                   : "rgba(255,255,255,.12)"
-              }`,
+                }`,
               background: i < step ? "#c9a84c" : "#0d0d0d",
               color:
                 i < step
                   ? "#0d0d0d"
                   : i === step
-                  ? "#c9a84c"
-                  : "rgba(255,255,255,.25)",
+                    ? "#c9a84c"
+                    : "rgba(255,255,255,.25)",
               fontSize: ".72rem",
               fontFamily: "'Barlow Condensed',sans-serif",
               fontWeight: 600,
@@ -394,11 +393,10 @@ export default function BookingPage() {
                         background: "none",
                         cursor: "pointer",
                         textAlign: "left",
-                        border: `1px solid ${
-                          form.car === car.id
-                            ? "#c9a84c"
-                            : "rgba(255,255,255,.08)"
-                        }`,
+                        border: `1px solid ${form.car === car.id
+                          ? "#c9a84c"
+                          : "rgba(255,255,255,.08)"
+                          }`,
                         background:
                           form.car === car.id
                             ? "rgba(201,168,76,.04)"
@@ -709,11 +707,10 @@ export default function BookingPage() {
                               form.time === t
                                 ? "rgba(201,168,76,.06)"
                                 : "transparent",
-                            border: `1px solid ${
-                              form.time === t
-                                ? "#c9a84c"
-                                : "rgba(255,255,255,.1)"
-                            }`,
+                            border: `1px solid ${form.time === t
+                              ? "#c9a84c"
+                              : "rgba(255,255,255,.1)"
+                              }`,
                             color:
                               form.time === t
                                 ? "#c9a84c"
@@ -858,7 +855,7 @@ export default function BookingPage() {
                         label: "Date",
                         value: form.date,
                       },
-                      { icon:  FaCarSide, label: "Time", value: form.time },
+                      { icon: FaCarSide, label: "Time", value: form.time },
                       { icon: FaRegUser, label: "Email", value: form.email },
                     ].map((item, i) => (
                       <div key={i}>
