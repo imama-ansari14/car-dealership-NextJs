@@ -2,24 +2,13 @@
 import { motion } from "framer-motion";
 
 const VARIANTS = {
-  gold:     { bg: "rgba(201,168,76,.12)",  border: "rgba(201,168,76,.35)",  text: "#c9a84c"           },
-  green:    { bg: "rgba(52,211,153,.08)",  border: "rgba(52,211,153,.3)",   text: "#34d399"           },
-  gray:     { bg: "rgba(255,255,255,.05)", border: "rgba(255,255,255,.12)", text: "rgba(255,255,255,.55)" },
-  red:      { bg: "rgba(239,68,68,.08)",   border: "rgba(239,68,68,.3)",    text: "#ef4444"           },
-  white:    { bg: "rgba(255,255,255,.06)", border: "rgba(255,255,255,.15)", text: "#f0ede8"            },
+  gold: { bg: "rgba(201,168,76,.12)", border: "rgba(201,168,76,.35)", text: "#c9a84c" },
+  green: { bg: "rgba(52,211,153,.08)", border: "rgba(52,211,153,.3)", text: "#34d399" },
+  gray: { bg: "rgba(255,255,255,.05)", border: "rgba(255,255,255,.12)", text: "rgba(255,255,255,.55)" },
+  red: { bg: "rgba(239,68,68,.08)", border: "rgba(239,68,68,.3)", text: "#ef4444" },
+  white: { bg: "rgba(255,255,255,.06)", border: "rgba(255,255,255,.15)", text: "#f0ede8" },
 };
 
-/**
- * Badge – small label chip used throughout the site.
- *
- * Props
- * ─────
- * variant  : "gold" | "green" | "gray" | "red" | "white"  (default "gold")
- * dot      : boolean  – show animated pulse dot  (default false)
- * animate  : boolean  – framer-motion fade-in    (default false)
- * className: string   – extra CSS classes
- * children : ReactNode
- */
 export default function Badge({ variant = "gold", dot = false, animate = false, className = "", children }) {
   const v = VARIANTS[variant] ?? VARIANTS.gold;
 

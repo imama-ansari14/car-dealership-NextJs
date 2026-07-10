@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa6";
 /* ── Primary gold button ── */
 export function GoldButton({ children, href, onClick, icon = false, size = "md", className = "", style = {} }) {
   const pad = size === "sm" ? ".55rem 1.25rem" : size === "lg" ? "1rem 2.5rem" : ".75rem 2rem";
-  const fz  = size === "sm" ? ".7rem" : ".78rem";
+  const fz = size === "sm" ? ".7rem" : ".78rem";
 
   const inner = (
     <motion.span
@@ -27,7 +27,7 @@ export function GoldButton({ children, href, onClick, icon = false, size = "md",
 /* ── Outline gold button ── */
 export function OutlineButton({ children, href, onClick, size = "md", className = "", style = {} }) {
   const pad = size === "sm" ? ".55rem 1.25rem" : size === "lg" ? "1rem 2.5rem" : ".75rem 2rem";
-  const fz  = size === "sm" ? ".7rem" : ".78rem";
+  const fz = size === "sm" ? ".7rem" : ".78rem";
 
   const inner = (
     <motion.span

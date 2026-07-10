@@ -10,14 +10,14 @@ export default function CarCard({ car, index = 0 }) {
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: .6, delay: index * .1, ease: [.25,.46,.45,.94] }}
+      transition={{ duration: .6, delay: index * .1, ease: [.25, .46, .45, .94] }}
       viewport={{ once: true, margin: "-40px" }}
       className="card-luxury"
       style={{ background: "#111", border: "1px solid rgba(255,255,255,.05)", overflow: "hidden", position: "relative", display: "flex", flexDirection: "column" }}
     >
       {/* Image */}
       <div style={{ position: "relative", height: 220, overflow: "hidden", background: "#0a0a0a", flexShrink: 0 }}>
-        <motion.div whileHover={{ scale: 1.07 }} transition={{ duration: .6, ease: [.25,.46,.45,.94] }} style={{ height: "100%", position: "relative" }}>
+        <motion.div whileHover={{ scale: 1.07 }} transition={{ duration: .6, ease: [.25, .46, .45, .94] }} style={{ height: "100%", position: "relative" }}>
           <Image
             src={car.image}
             alt={`${car.brand} ${car.model}`}
