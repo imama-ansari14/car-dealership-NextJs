@@ -1,5 +1,6 @@
 "use client";
-import { useState, use } from "react";
+
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -13,7 +14,7 @@ function SpecRow({ icon: Icon, label, value }) {
   return (
     <div style={{ display: "flex", alignItems: "flex-start", gap: "1rem", padding: "1.1rem 1.25rem", border: "1px solid rgba(255,255,255,.06)", transition: "border-color .3s" }}>
       <div style={{ width: 34, height: 34, border: "1px solid rgba(201,168,76,.25)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-        <Icon size={13} style={{ color: "#c9a84c" }} />
+        {Icon && <Icon size={13} style={{ color: "#c9a84c" }} />}
       </div>
       <div>
         <p className="font-condensed" style={{ color: "rgba(255,255,255,.3)", fontSize: ".62rem", letterSpacing: ".25em", textTransform: "uppercase", marginBottom: ".25rem" }}>{label}</p>
@@ -24,7 +25,9 @@ function SpecRow({ icon: Icon, label, value }) {
 }
 
 export default function CarDetailPage({ params }) {
-  const { id } = use(params);
+  // Unwrapping async params safely for Next.js 15 Client Components
+  const resolvedParams = React.use(params);
+  const id = resolvedParams?.id;
   const car = cars.find(c => c.id === id);
   const [activeImg, setActiveImg] = useState(0);
 
