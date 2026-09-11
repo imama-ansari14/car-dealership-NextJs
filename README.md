@@ -59,19 +59,6 @@ apex-motors/
 
 ---
 
-## 🎨 Design Tokens
-
-| Token | Value |
-|-------|-------|
-| Gold | `#c9a84c` |
-| Gold Light | `#e4c97e` |
-| Gold Dark | `#a07830` |
-| Background | `#0d0d0d` |
-| Surface | `#111111` |
-| Off-white | `#f0ede8` |
-
----
-
 ## 🛠️ Tech Stack
 
 - **Next.js 15** (App Router)
